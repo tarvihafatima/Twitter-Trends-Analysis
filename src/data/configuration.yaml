@@ -1,0 +1,10 @@
+#-------------------------------------------------
+#PUNBUB CONFIGURATIONS
+#--------------------------------------------------
+
+pubnub_config:
+    user_id: <YOUR USER ID>
+    subscribe_key: <YOUR SUBSCRIBE KEY>
+    publish_key: <YOUR PUBLISH KEY>
+
+
