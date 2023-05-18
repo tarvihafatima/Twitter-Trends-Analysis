@@ -3,6 +3,11 @@
 #--------------------------------------------------
 
 pubnub_config:
-    user_id: <YOUR USER ID>
-    subscribe_key: <YOUR SUBSCRIBE KEY>
-    publish_key: <YOUR PUBLISH KEY>
+    user_id: tararqum@gmail.com
+    subscribe_key: sub-c-d00e0d32-66ac-4628-aa65-a42a1f0c493b
+    publish_key: pub-c-5e471a70-89ad-4ab2-b616-57461f8ec0cf
+    
+    
+cassandra_config:
+    ASTRA_CLIENT_ID: 'hQuZAEeLzPpENMlozoarGmSu'
+    ASTRA_CLIENT_SECRET: 'd.GQzOy1JP,30mXPU7OlYyZlb6_ko,gjjkd,rFN8ih,oyu9FPtHOl-tZCkb1QXyUhZ5SM,mY5qgE2bxAcM315AX.KNxBIrJCghPF.b0NZ5Otw7DG0.iJ,tvmJnynxZoz'
