@@ -22,18 +22,24 @@ str = "We are all good to bring the trends for you. \
 minutes = input(str)
 
 
+try:
+    
+    # Initiate Post Request to Trends API
 
-# Initiate Get Request from Trends API
+    url = 'https://9188-2a02-a210-2ec2-1480-58ec-cacd-5b36-a6cf.ngrok-free.app/trends_configurations/?no_of_top_trends=\
+          ' + trends + '&country=' + location
 
-url = 'https://9188-2a02-a210-2ec2-1480-58ec-cacd-5b36-a6cf.ngrok-free.app/trends_configurations/?no_of_top_trends=\
-      ' + trends + '&country=' + location
-
-x = requests.post(url)
+    x = requests.post(url)
 
 
-# Initiate Get Request from Time API
+    # Initiate Post Request to Time API
 
-url = 'https://9188-2a02-a210-2ec2-1480-58ec-cacd-5b36-a6cf.ngrok-free.app/timer/?minutes=\
-      ' + minutes
+    url = 'https://9188-2a02-a210-2ec2-1480-58ec-cacd-5b36-a6cf.ngrok-free.app/timer/?minutes=\
+          ' + minutes
 
-x = requests.post(url)
+    x = requests.post(url)
+    
+    
+except Exception as e:
+    
+    print("Error Posting new configurations to the API", str(e)
