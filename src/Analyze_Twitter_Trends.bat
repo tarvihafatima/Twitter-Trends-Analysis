@@ -1,1 +1,2 @@
-jupyter nbconvert --execute --to notebook --inplace main.ipynb
+jupyter nbconvert --to python main.ipynb 
+python main.py
