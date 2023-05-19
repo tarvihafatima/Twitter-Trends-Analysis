@@ -1,5 +1,4 @@
 #import libraries
-from typing import Optional
 from fastapi import FastAPI, Query
 
 # initialize global variables
@@ -14,7 +13,7 @@ app = FastAPI()
 def add_config(no_of_top_trends: int = Query(default= 3), country: str = Query(default= 'netherlands')):
     global g_no_of_top_trends, g_country
     g_no_of_top_trends = no_of_top_trends
-    g_country = country
+    g_country = country.lower()
     return g_no_of_top_trends, g_country
 
 # Get Twitter Trends Configurations   
